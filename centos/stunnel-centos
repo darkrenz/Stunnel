@@ -1,0 +1,20 @@
+#!/bin/bash
+#
+# Auto Installler Stunnel Centos
+#
+# Author: ID Tunnel
+# created Bye :2020 Mei
+
+
+#install stunnel
+cd
+yum -y install stunnel
+wget -O /etc/rc.d/init.d/stunnel "https://github.com/idtunnel/Stunnel/blob/master/centos/stunnel-init"
+wget -O /etc/stunnel/stunnel.conf "https://raw.githubusercontent.com/idtunnel/Stunnel/master/centos/stunnel-port"
+wget -O /etc/stunnel/stunnel.pem "https://github.com/idtunnel/Stunnel/blob/master/centos/stunnel-cert"
+chmod +x /etc/init.d/stunnel
+service stunnel start
+service stunnel restart
+chkconfig stunnel on
+
+rm -rfs tunnel-centos
