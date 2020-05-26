@@ -1,6 +1,6 @@
 # auto installer Stunnel
-# created Bye hideSSH and Idtunnel
-# Script Bye Dedi Susanto
+*created Bye hideSSH and Idtunnel
+*Script Bye Dedi Susanto
 
 * Script Installasi Stunnel Centos
 --------
