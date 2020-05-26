@@ -45,3 +45,6 @@ cat key.pem cert.pem >> /etc/stunnel/stunnel.pem
 # konfigurasi stunnel
 sed -i 's/ENABLED=0/ENABLED=1/g' /etc/default/stunnel4
 service stunnel4 restart
+
+#hapus auto install stunnel debian
+rm -rf stunnel.sh
