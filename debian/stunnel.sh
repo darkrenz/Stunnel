@@ -1,4 +1,3 @@
-  
 #!/bin/bash
 #auto install debiain
 #created bye Idtunnel
