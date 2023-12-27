@@ -19,18 +19,18 @@ client = no
 socket = a:SO_REUSEADDR=1
 socket = l:TCP_NODELAY=1
 socket = r:TCP_NODELAY=1
+
 [dropbear]
-accept = 443
-connect = 127.0.0.1:143
-[dropbear]
-accept = 222
-connect = 127.0.0.1:22
-[dropbear]
-accept = 444
-connect = 127.0.0.1:44
-[dropbear]
+accept = 445
+connect = 127.0.0.1:109
+
+[openssh]
 accept = 777
-connect = 127.0.0.1:77
+connect = 127.0.0.1:443
+
+[openvpn]
+accept = 990
+connect = 127.0.0.1:1194
 END
 
 echo "=================  membuat Sertifikat OpenSSL ======================"
